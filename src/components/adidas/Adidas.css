@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.adidas {
+    margin-top: 257px;
+    height: 600px;
+    background: #40BFFF;
+    margin-bottom: 242px;
+}
+
+.adidas__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.adidas__content {
+    width: 100%;
+    padding-top: 161px;
+    padding-left: 10px;
+}
+
+.adidas__content>h3 {
+    color: #fff;
+    font-size: 55px;
+    margin-bottom: 23px;
+}
+
+.adidas__content>p {
+    font-size: 24px;
+    text-wrap: nowrap;
+    color: #FFFFFF;
+
+}
+
+.show {
+    font-size: 20px;
+    padding: 15px 12px 12px 0;
+    background: #40BFFF;
+    border-top: #40BFFF;
+    border-left: #40BFFF;
+    border-right: #40BFFF;
+    border-bottom: 3px solid white;
+    color: #fff;
+    cursor: pointer;
+}

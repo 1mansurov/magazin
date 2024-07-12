@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    max-width: 1200px;
+    height: 103px;
+    margin: 0 auto;
+}
+
+.nav__language{
+    height: 51px;
+    max-width: 1200px;
+
+}
+
+.lang{
+    margin-top: 20px;
+}
+
+.nav__content{
+    height: 51px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__content > img{
+    max-width: 80px;
+}

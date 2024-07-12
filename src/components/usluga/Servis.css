@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.servis{
+    margin: 0 auto;
+    max-width: 1090px;
+    height: 170px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.servis__card > h3{
+    font-size: 27px;
+    margin-top: 53px;
+}
+
+.servis__card > p{
+    margin-top: 4px;
+    max-width: 197px;
+    font-size: 18px;
+
+} 

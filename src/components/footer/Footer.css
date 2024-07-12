@@ -1,0 +1,27 @@
+.footer{
+    height: 450px;
+    background: #BCDDFE;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__wrapper{
+    width: 100%;
+    max-width: 1000px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__card{
+    width: 100%;
+    max-width: 152px;
+    height: 152px;
+}
+
+.footer__card > h4{
+   margin-bottom: 15px;
+}

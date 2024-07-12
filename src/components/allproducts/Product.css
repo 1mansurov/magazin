@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.products{
+    max-width: 1200px;
+    height: 1010px;
+    margin: 0 auto;
+    font-size: 35px;
+    text-align: center;
+}
+
+.products > h3{
+    margin-bottom: 83px;
+}
+
+.products__wrapper{
+    max-width: 1310px;
+    height: 810px;
+    
+}
+
+.wrapper{
+    display: flex;
+    max-width: 1310px;
+    height: 388px;
+    margin-bottom: 24px;
+}
+
+.products__wrapper__card{
+    width: 100%;
+    margin-right: 10px;
+    max-width: 301px;
+    height: 388px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+}
+
+.products__wrapper__card > h4{
+    font-size: 18px;
+    color: #223263;
+}
+.comment > large{
+    color: #40BFFF;
+    margin: 10px;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.comment > small{
+    margin: 10px;
+    gap: 10px;
+    font-size: 14px;
+    color: #9098B1;
+    text-decoration-line: line-through;
+}
+
+
+.comment > span{
+    margin: 10px;
+    gap: 10px;
+    font-size: 13px;
+    color: #FB7181;
+}
+
+.icon{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.more{
+    margin-top: 22px;
+    margin-bottom: 257px;
+}
+
