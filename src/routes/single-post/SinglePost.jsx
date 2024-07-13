@@ -40,6 +40,7 @@ const SinglePost = () => {
                             <p className='text-[#9098B1]' > {data.rating} </p>
                         </div>
                     </div>
+                     
                     <div className=' w-full max-w-[250px] h-[150px] p-[20px]  ' >
                         <p>{t("Availability")}</p>
                         <p>{t("Category")}</p>
@@ -47,6 +48,7 @@ const SinglePost = () => {
                         <p>{t("stok")}</p>
                         <p>Accessories</p>
                     </div>
+                    
                     <div className=' flex justify-between items-center  ' >
                         <div className='max-w-[160px] h-[50px] bg-[#F6F7F8] m-[20px] flex  w-full items-center justify-around ' >
                             <button className='p-[10px] text-[#33A0FF] text-[25px] '  >-</button>

@@ -8,7 +8,7 @@ const Top = () => {
     const {t} = useTranslation()
     return (
         <div>
-            <div className="top">
+            <div className="top mb-[100px] ">
                 <h3>{t("topTitle")}</h3>
                 <div className='card__wrapper' >
                     <div className="top__card">
