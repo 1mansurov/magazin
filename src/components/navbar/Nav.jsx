@@ -4,9 +4,10 @@ import profile from '../../img/nav.svg';
 import navicon from '../../img/navicon.svg';
 import karzinka from '../../img/navbasket.svg';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
-  const { t, i18n } = useTranslation(); // Destructure i18n from useTranslation
+  const { t, i18n } = useTranslation(); 
 
   return (
     <div>
@@ -24,7 +25,9 @@ const Nav = () => {
           </select>
         </div>
         <div className="nav__content" >
-          <img src={profile} alt="" />
+          <Link to='/auth'>
+            <img src={profile} alt="" />
+          </Link>
           <img src={navicon} alt="" />
           <img src={karzinka} alt="" />
         </div>

@@ -1,3 +1,35 @@
 {
-    "allProductsTitle": "ALL PRODUCTS"
+    "allProductsTitle":"ALL PRODUCTS",
+    "adidasTitle":"Adidas Men's Running Shoes",
+    "adidasComment":"Performance and design. Taken right to the edge.",
+    "adidasBtn":"Show now",
+    "servisTitle1":"Free shopping",
+    "servisTitle2":"100% BACK",
+    "servisTitle3":"24/7 SUPPORT",
+    "servisComment":"Lorem Ipsum is simply fake text from the printing and typesetting industry",
+    "topTitle":"BEST RATED PRODUCTS",
+    "footerTitle2":"Follow Us",
+    "footerTitle3":"Contact Us",
+    "footerComment1":"Lorem Ipsum is fake text from real printing and typing",
+    "footerComment2":"From the 1500s, when an unknown printer took the galley and deciphered it.",
+    "footerComment3":"E-Comm, 4578 Marmora Road, Glasgow D04 89GR",
+    "Login":"Login",
+    "Email":"Email",
+    "Password":"Password",
+    "question":"Did you forget your dream?",
+    "register":"Re-registration",
+    "Register":"Registration",
+    "name":"Name",
+    "phone":"Number",
+    "street":"Srteet",
+    "apartment":"Apartment",
+    "city":"City",
+    "country":"Country",
+    "here":"Register here",
+    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring."
+     
+
+
+
+
 }

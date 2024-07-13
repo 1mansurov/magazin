@@ -1,3 +1,35 @@
 {
-    "allProductsTitle":"BARCHA MAHSULOTLAR"
+    "allProductsTitle":"BARCHA MAHSULOTLAR",
+    "adidasTitle":"Adidas Erkaklar Yugurish Krossovkalari",
+    "adidasComment":"Ishlash va dizayn. To'g'ri chetiga olib borilgan.",
+    "adidasBtn":"Hozir ko'rsat",
+    "servisTitle1":"Bepul xarid qilish",
+    "servisTitle2":"100% QAYTA QAYTA",
+    "servisTitle3":"24/7 QO'LLAB-QUVVATLASH",
+    "servisComment":"Lorem Ipsum matbaa va matn terish sanoatining oddiygina soxta matnidir.",
+    "topTitle":"ENG ENG YAXSHI BAHOLANGAN MAHSULOTLAR",
+    "footerTitle2":"Ortimizdan yuring",
+    "footerTitle3":"Biz bilan bog'lanish",
+    "footerComment1":"Lorem Ipsum oddiygina bosma va matn terishning soxta matnidir",
+    "footerComment2":"1500-yillardan boshlab, noma'lum printer galleyni olib, shifrlanganda.",
+    "footerComment3":"E-Comm, 4578 Marmora Road, Glasgow D04 89GR",
+    "Login":"Kirish",
+    "Email":"Email kiriting",
+    "Password":"Kod kiriting",
+    "question":"Ko`dingzini esdan chiqardingizmi ?",
+    "register":"Registratsiyadan qayta o`tish",
+    "Register":"Registratsiya",
+    "name":"Ismni kiriting",
+    "phone":"Nomeringizni kiriting",
+    "street":"Ko`cha nomini kiriting",
+    "apartment":"Honadonni kiriting",
+    "city":"Yashash Manzilingizni kiriting",
+    "country":"Shahringzni kiriting",
+    "here":"Bu yerga kiring",
+    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring."
+     
+
+
+
+
 }
