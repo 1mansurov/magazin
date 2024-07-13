@@ -1,118 +1,40 @@
-import React from 'react'
-import './Product.css';
+import React, { useEffect, useState } from 'react'
 import product from '../../img/products.svg'
-import kros from '../../img/kros.png'
-import sumka from '../../img/sumka.png'
-import icon from '../../img/icon.png'
-import nikekros from '../../img/nikekros.png'
-import krostegi from '../../img/krostegi.png'
-import sariqkros from '../../img/sariqkros.png'
-import sariqorqa from '../../img/sariqorqa.png'
-import zvezda from '../../img/zvezda.svg'
+import { useTranslation } from 'react-i18next';
+import axios from '../../api'
+import ProductItem from '../product-item/ProductItem';
 
 
 const Product = () => {
+  const { t, i18n } = useTranslation();
+  const [data, setData] = useState([]);
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get('/products');
+        setData(res.data)
+      }
+      catch (error) {
+        console.log(error);
+      }
+    }
+    fetchData();
+  }, []);
+
+  console.log(data);
+
+
   return (
-    <div>
-      <div className="products">
-        <h3>ALL PRODUCTS</h3>
-        <div className="products__wrapper">
-          <div className='wrapper' >
-            <div className="products__wrapper__card">
-              <img src={kros} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-            <div className="products__wrapper__card">
-              <img src={sumka} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-              
-            </div>
-            <div className="products__wrapper__card">
-              <img className='icon' src={icon} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-            <div className="products__wrapper__card">
-              <img src={nikekros} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-          </div>
-          <div className='wrapper' >
-            <div className="products__wrapper__card">
-              <img src={krostegi} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-            <div className="products__wrapper__card">
-              <img src={sariqkros} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-            <div className="products__wrapper__card">
-              <img src={sariqorqa} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-            <div className="products__wrapper__card">
-              <img src={nikekros} alt="" />
-              <h4>Nike Air Max 270 React</h4>
-              <img src={zvezda} alt="" />
-              <div className='comment' >
-                <large>$299,43</large>
-                <small>$534,33</small>
-                <span>24% Off</span>
-                
-              </div>
-            </div>
-          </div>
-          <a  href=""><img className='more' src={product} alt="" /></a>
-        </div>
+    <div className='max-w-[1315px] mx-auto '>
+        <h3 className='text-center text-[#22262A] text-3xl p-5' >{t('allProductsTitle')}</h3>
+        <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 place-items-center gap-5' >
+          {data?.map(product => (
+            <ProductItem key={product.id} product={product} />
+          ))}
       </div>
+      <a className='flex justify-center p-[20px] ' href=""><img className='more' src={product} alt="" /></a>
     </div>
   )
 }

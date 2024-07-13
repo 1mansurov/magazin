@@ -1,25 +1,23 @@
 import './App.css'
-import Adidas from './components/adidas/Adidas'
-import Product from './components/allproducts/Product'
+import { Routes, Route } from 'react-router-dom'
 import Footer from './components/footer/Footer'
-import Hero from './components/hero/Hero'
 import Nav from './components/navbar/Nav'
-import Top from './components/top/Top'
-import Servis from './components/usluga/Servis'
+import Home from './routes/home/Home';
+import SinglePost from './routes/single-post/SinglePost'
+
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 </style>
 
 function App() {
-
   return (
     <>
       <Nav />
-      <Hero />
-      <Product />
-      <Adidas />
-      <Servis />
-      <Top />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/single-post/:id' element={<SinglePost />} />
+      </Routes>
       <Footer />
     </>
   )
