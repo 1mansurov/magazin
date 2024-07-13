@@ -26,7 +26,13 @@
     "city":"Yashash Manzilingizni kiriting",
     "country":"Shahringzni kiriting",
     "here":"Bu yerga kiring",
-    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring."
+    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring.",
+    "Availability":"Mavjudligi",
+    "Category":"Katigoriya",
+    "free":"Bepul xarid qilish",
+    "stok":"Stokda: 10"
+
+     
      
 
 

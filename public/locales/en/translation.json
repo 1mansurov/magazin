@@ -26,7 +26,11 @@
     "city":"City",
     "country":"Country",
     "here":"Register here",
-    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring."
+    "erorlogin":"Tizimga kirishda xatolik yuz berdi. Hisob maʼlumotlaringizni tekshiring va qaytadan urinib koʻring.",
+    "Availability":"Availability",
+    "Category":"Category",
+    "free":"Free Shoping",
+    "stok":"In stock: 10"
      
 
 

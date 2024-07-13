@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from '../../api';
 import { useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 
 const SinglePost = () => {
@@ -22,6 +23,7 @@ const SinglePost = () => {
 
     console.log(data);
 
+    const {t} = useTranslation()
 
     return (
 
@@ -39,10 +41,10 @@ const SinglePost = () => {
                         </div>
                     </div>
                     <div className=' w-full max-w-[250px] h-[150px] p-[20px]  ' >
-                        <p>Availability:</p>
-                        <p>Category</p>
-                        <p>Free shipping</p>
-                        <p>In stock: 10</p>
+                        <p>{t("Availability")}</p>
+                        <p>{t("Category")}</p>
+                        <p>{t("free")}</p>
+                        <p>{t("stok")}</p>
                         <p>Accessories</p>
                     </div>
                     <div className=' flex justify-between items-center  ' >
@@ -51,11 +53,8 @@ const SinglePost = () => {
                             <p>2</p>
                             <button className='p-[10px] text-[#33A0FF] text-[25px] '>+</button>
                         </div>
-                        <div className='max-w-[160px] h-[50px] bg-[#F6F7F8] w-full '>
+                        <div className='max-w-[160px] h-[50px] bg-[#F6F7F8] w-full pl-[30px] pt-[10px] '>
                             Add To Cart
-                        </div>
-                        <div className='max-w-[63px] h-[50px] bg-[#F6F7F8] w-full '>
-                            
                         </div>
                     </div>
                     
